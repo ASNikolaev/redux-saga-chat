@@ -40,18 +40,15 @@ function connect(user, chat) {
 function subscribe(socket) {
   return eventChannel(emit => {
     socket.on('client message', res => {
-      ///доделать обновление чата  не загружать историю при открытие чата, загружать при присойденение
       emit(addMessage(res))
     });
     socket.on('typing', res => {
-      ///при наборе сообщение юзером
       console.log(res)
     });
     socket.on('unauthorized', err => {
       emit(unsetClient())
     });
     socket.on('connected', res => {
-      /// имья подключившегося и новый список
       emit(userConnected(res))
       emit(toastrActions.add({type: 'info', title: 'connected', message: `${res.newUser} connected`}))
     });
@@ -63,7 +60,6 @@ function subscribe(socket) {
       emit(userDisconnected(res))
     });
     socket.on('error message', res => {
-      ///сообщение не сохранилось в базу данных или произошла ощибка
       emit(toastrActions.add({type: 'error', title: 'disconnected', message: `Message was not sent`}))
     });
     return () => {}
