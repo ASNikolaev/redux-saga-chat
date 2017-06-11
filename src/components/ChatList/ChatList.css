@@ -1,0 +1,15 @@
+.chats_contents {
+  border: 1px solid black;
+  margin: 10px 30px
+}
+
+.chat_item {
+  float: left;
+  display: block;
+  width: 23%;
+  padding: 30px 10px;
+  margin: 1%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px
+}

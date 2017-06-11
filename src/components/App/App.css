@@ -1,0 +1,52 @@
+
+
+
+
+.sign_menu div{
+  height: 100vh;
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+
+.sign_menu div:hover {
+    border: 3px solid #9F9FA0;
+    cursor: pointer;
+}
+
+
+
+.signIcon {
+  margin-top: 45%;
+  margin-bottom: 55%;
+}
+
+.signup {
+  background-color: #090909
+}
+
+.signin {
+  background-color: #FFFFFF
+}
+
+.sign_label {
+  font-size: 25px;
+  margin-top: 10px
+}
+
+.sign_label_1 {
+  color: #090909;
+}
+
+.sign_label_2 {
+  margin-left: -8px;
+  color: #FFFFFF;
+}
+
+.fa-user-plus {
+  color: #FFFFFF;
+}
+
+.fa-sign-in {
+   color: #090909;
+}

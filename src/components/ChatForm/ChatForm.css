@@ -1,0 +1,32 @@
+.chat_form_component {
+    min-height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 999;
+    border: 2px solid #090909;
+}
+
+.chat_form_component form {
+  text-align: center;
+}
+
+
+.chat_form_component form input[type=text] {
+  border: 0;
+  outline:none;
+  outline-offset: 0;
+  border-bottom: 1px solid #090909;
+  margin: 10px 0 20px 0;
+  width: 40%
+}
+
+.chat_form_component form button {
+  margin-bottom: 20px;
+  text-decoration: none;
+  -webkit-border-radius: 35;
+  -moz-border-radius: 35;
+  border-radius: 35px;
+  padding: 10px 20px 10px 20px;
+  background: #FFFFFF;
+  border: 1px solid #090909
+}
