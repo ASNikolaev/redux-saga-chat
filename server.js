@@ -42,6 +42,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(session({resave: true, saveUninitialized: true, secret: config.secret}));
+
 app.use('/api', authRoute);
 app.use('/api', checkToken, userRoute);
 app.use('/chats', checkToken, chatRoute);
